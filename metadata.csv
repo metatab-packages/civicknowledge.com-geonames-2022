@@ -1,0 +1,32 @@
+Declare,metatab-latest
+Title,Geographical Region Names
+Description,
+Identifier,e50eb40e-6f21-4cab-9271-103f165f73a6
+Name,civicknowledge.com-geonames-2022-1.1.1
+Dataset,geonames
+Origin,civicknowledge.com
+Time,2022
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2023-02-19T00:36:10
+Modified,2023-02-19T00:36:11
+Giturl,https://github.com/CivicKnowledge/autosoc.git
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+
+Section,References,Name,Description,
+Reference,https://datahub.io/core/country-codes/r/country-codes.csv,country_codes,"Country codes, from https://datahub.io/core/country-codes"
+
+
+Section,Resources,Name,Description,
+
+Section,Schema,DataType,AltName,Description
