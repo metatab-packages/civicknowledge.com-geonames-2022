@@ -1,6 +1,6 @@
 Declare,metatab-latest
 Title,Geographical Region Names
-Description,
+Description,"Country names, and names for US countries, metros, cities and states."
 Identifier,e50eb40e-6f21-4cab-9271-103f165f73a6
 Name,civicknowledge.com-geonames-2022-1.1.1
 Dataset,geonames
@@ -14,19 +14,29 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2023-02-19T00:36:10
-Modified,2023-02-19T00:36:11
-Giturl,https://github.com/CivicKnowledge/autosoc.git
-
+Modified,2023-02-20T23:59:55
+Giturl,https://github.com/metatab-packages/civicknowledge.com-geonames-2022.git
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-
+""
 Section,References,Name,Description,
-Reference,https://datahub.io/core/country-codes/r/country-codes.csv,country_codes,"Country codes, from https://datahub.io/core/country-codes"
-
-
+Reference,https://datahub.io/core/country-codes/r/country-codes.csv,country_codes,"Country codes, from https://datahub.io/core/country-codes",
+Reference,censusgeo://2022/5/US/state,states,,
+Reference,censusgeo://2020/5/US/CBSA,metros,,
+Reference,censusgeo://2022/5/US/county,counties,,
+Reference,censusgeo://2020/5/{}/place,places,,
+""
 Section,Resources,Name,Description,
-
-Section,Schema,DataType,AltName,Description
+Datafile,notebooks/Build.ipynb#names,names,Geographic names,
+""
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,names,,,,
+Table.Column,ref,string,,,
+Table.Column,geoid,string,,,
+Table.Column,name,text,,,
+Table.Column,name2,text,,,
+Table.Column,category,string,,,
